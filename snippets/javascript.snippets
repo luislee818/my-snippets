@@ -1,20 +1,18 @@
-# Define single property with getter and setter
-snippet propgs
-	Object.defineProperty(${1:this}, '${2:property}', {
-			get () {
-				return $2;
-			},
-			set (val) {
-				$2 = val;
-			}
-		}
-	);
-
 # Define single property with getter
 snippet propg
 	Object.defineProperty(${1:this}, '${2:property}', {
-			get () {
-				return $2;
-			}
+		get () {
+			return $2;
 		}
-	);
+	});
+
+# Define single property with getter and setter
+snippet propgs
+	Object.defineProperty(${1:this}, '${2:property}', {
+		get () {
+			return $2;
+		},
+		set (val) {
+			$2 = val;
+		}
+	});
