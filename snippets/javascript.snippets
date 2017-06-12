@@ -16,3 +16,26 @@ snippet propgs
 			$2 = val;
 		}
 	});
+
+snippet be
+	beforeEach(() => {
+		${1:// clause};
+	});
+
+snippet desc
+	describe('${1:subject}', () => {
+		${2:// clause};
+	});
+
+snippet con
+	context('${1:subject}', () => {
+		${2:// clause};
+	});
+
+snippet it
+	it('${1:should do something}', () => {
+		${2:// clause};
+	});
+
+snippet exp
+	expect(${1:subject}).to.${2:equal}(${3:expected});
